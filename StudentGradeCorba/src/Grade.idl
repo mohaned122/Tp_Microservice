@@ -1,0 +1,5 @@
+module GradeInterfaceModule {
+    interface GradeInterface {
+        double getStudentGrade(in long StudentID, in string SubjectName);
+    };
+};
