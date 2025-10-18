@@ -1,0 +1,5 @@
+module WelcomeInterfaceModule{
+    interface WelcomeInterface{
+       string echoWelcome(in string word);
+    };
+};
