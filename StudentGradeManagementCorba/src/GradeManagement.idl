@@ -1,0 +1,20 @@
+module GradeManagementModule{
+    //class
+    struct SubjectGrade{
+        string subject;
+        double grade;
+    };
+
+    //definition de la type psq idl besoin de definition de la type
+    typedef sequence<SubjectGrade> SubjectGradeSeq;
+
+    //interface
+    interface GradeManagementInterface{
+
+       double getStudentGrade(in long StudentID,in string SubjectName);
+
+       void setStudentGrade(in long StudentID,in string SubjectName,in double grade);
+
+       SubjectGradeSeq getGrades(in long studentID);
+    };
+};
